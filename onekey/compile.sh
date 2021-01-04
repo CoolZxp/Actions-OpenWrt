@@ -1,7 +1,7 @@
 #/bin/bash
 echo
 echo
-echo "本脚本仅适用于在Ubuntu环境下编译 https://github.com/garypang13/Actions-OpenWrt"
+echo "本脚本仅适用于在Ubuntu环境下编译 https://github.com/CoolZxp/Actions-OpenWrt"
 echo
 echo
 sleep 2s
@@ -41,7 +41,7 @@ fi
 
 rm -Rf openwrt
 git clone -b master --depth 1 https://github.com/openwrt/openwrt
-svn co https://github.com/garypang13/Actions-OpenWrt/trunk/devices openwrt/devices
+svn co https://github.com/CoolZxp/Actions-OpenWrt/trunk/devices openwrt/devices
 cd openwrt
 echo "
 

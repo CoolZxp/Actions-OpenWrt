@@ -1,7 +1,7 @@
 #/bin/bash
 echo
 echo
-echo "本脚本仅适用于在Ubuntu环境下编译 https://github.com/garypang13/Actions-OpenWrt"
+echo "本脚本仅适用于在Ubuntu环境下编译 https://github.com/CoolZxp/Actions-OpenWrt"
 echo
 echo
 
@@ -19,7 +19,7 @@ echo
 clear
 
 rm -Rf openwrt/common openwrt/files openwrt/devices
-svn co https://github.com/garypang13/Actions-OpenWrt/trunk/devices openwrt/devices
+svn co https://github.com/CoolZxp/Actions-OpenWrt/trunk/devices openwrt/devices
 cd openwrt
 
 [ $(grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/') == generic ] && {
